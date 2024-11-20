@@ -8,6 +8,7 @@ import Home from './routes/Home';
 import SettingsPage from './routes/Settings';
 import { NotificationProvider } from './context/NotificationContext';
 import { AuthProvider } from './context/AuthContext';
+import StripeProvider from './stripeProvider';
 
 const router = createBrowserRouter([
   { path: '', element: <Root />,
@@ -26,10 +27,12 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <StripeProvider>
   <AuthProvider>
     <NotificationProvider>
       <RouterProvider router={router} />
     </NotificationProvider>
   </AuthProvider>
+  </StripeProvider>
   </React.StrictMode>
 );

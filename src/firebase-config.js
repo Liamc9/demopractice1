@@ -8,7 +8,12 @@ import { getFunctions } from 'firebase/functions';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  // TODO: Add your Firebase configuration here
+  apiKey: "AIzaSyBkJ2_l4hcn5cVXuEA6puDb_vC0mmNkmEA",
+  authDomain: "demopractice1-421ad.firebaseapp.com",
+  projectId: "demopractice1-421ad",
+  storageBucket: "demopractice1-421ad.firebasestorage.app",
+  messagingSenderId: "1029415245018",
+  appId: "1:1029415245018:web:d132fdbba260410831c1e3"
 };
 
 // Initialize Firebase and export services
