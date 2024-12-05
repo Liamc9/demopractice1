@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom'
 import Root from './routes/Root';
 import Login from './routes/Login';
 import Home from './routes/Home';
+import Search from './routes/Search';
 import SettingsPage from './routes/Settings';
 import { NotificationProvider } from './context/NotificationContext';
 import { AuthProvider } from './context/AuthContext';
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
       { path: 'login', element: <Login />, },
       { path: 'home', element: <Home />, },
       { path: 'settings', element: <SettingsPage />, },
+      { path: 'search', element: <Search />, },
     ],
   },
 ]);
