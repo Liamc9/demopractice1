@@ -73,7 +73,7 @@ export default function Home() {
           <strong>Username:</strong> {userData?.username || 'Not set'}
         </p>
         <p>
-          <strong>Age:</strong> {userData?.age || 'Not set'}
+          <strong>Age: </strong> {userData?.age || 'Not set'}
         </p>
       </div>
 
